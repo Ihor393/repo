@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>CV - Ihor Bezzubenko</title>
+
+  <!-- подключение темы -->
+  <link id="theme-style" rel="stylesheet" href="green.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Ihor Bezzubenko</h1>
+</header>
+
+<!-- кнопка -->
+<div style="text-align:center; margin: 10px;">
+  <button onclick="toggleTheme()">Zmień motyw</button>
+</div>
+
+<main>
+
+  <section>
+    <h2>Kontakt</h2>
+    <p>Email: <a href="mailto:ibezzub1@stu.vistula.edu.pl">ibezzub1@stu.vistula.edu.pl</a></p>
+    <p>Telefon: <a href="tel:+48123456789">+48 123456789</a></p>
+    <p>Miasto: Warszawa</p>
+
+    <p>
+      <a href="https://github.com/Ihor393" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+
+    <p>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+
+    <img src="cat.jpg" alt="zdjęcie" width="150">
+  </section>
+
+  <section>
+    <h2>O mnie</h2>
+    <p>Mam 18 lat, studiuję informatykę na Vistula University w Warszawie. Interesuję się tworzeniem stron internetowych, aplikacji oraz modyfikacji do gier.</p>
+  </section>
+
+  <section>
+    <h2>Umiejętności</h2>
+    <ul>
+      <li>Java</li>
+      <li>Spring</li>
+      <li>C#</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Git</li>
+      <li>Tworzenie aplikacji</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Doświadczenie</h2>
+
+    <article>
+      <h3>Projekty programistyczne</h3>
+      <p>Tworzyłem różne projekty: strony internetowe, aplikacje oraz mody do gier.</p>
+    </article>
+
+    <article>
+      <h3>Projekty własne</h3>
+      <p>Realizowałem projekty edukacyjne i rozwijałem umiejętności programistyczne.</p>
+    </article>
+
+  </section>
+
+  <section>
+    <h2>Edukacja</h2>
+    <p>Student informatyki, Vistula University, Warszawa</p>
+  </section>
+
+  <section>
+    <h2>Projekty</h2>
+    <ul>
+      <li>Strony internetowe</li>
+      <li>Aplikacje i mody do gier</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026</p>
+</footer>
+
+<!-- JS -->
+<script>
+  function toggleTheme() {
+    const theme = document.getElementById("theme-style");
+
+    if (theme.getAttribute("href") === "green.css") {
+      theme.setAttribute("href", "red.css");
+    } else {
+      theme.setAttribute("href", "green.css");
+    }
+  }
+</script>
+
+</body>
+</html>
